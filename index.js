@@ -21,9 +21,20 @@ app.use(cookieParser());
 //serve static files
 app.use('/', express.static(path.join(__dirname, '/public')));
 
+app.get('/', (req, res) => {
+  res.send(
+    '<h1> welcome to the person api</h1>'
+  )
+})
+
+app.use('/api', require('./Router/personRoute'));
+
+
+
+
 
 
 mongoose.connection.once('open', () => {
-    console.log('Connected to MongoDB');
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  console.log('Connected to MongoDB');
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });
