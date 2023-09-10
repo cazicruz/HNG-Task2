@@ -1,0 +1,19 @@
+{
+  "name": "hng-task_2",
+  "version": "1.0.0",
+  "description": "hng task for crud operation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cazicruz/HNG-Task_2.git"
+  },
+  "author": "Onwuli David",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cazicruz/HNG-Task_2/issues"
+  },
+  "homepage": "https://github.com/cazicruz/HNG-Task_2#readme"
+}
