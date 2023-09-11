@@ -404,3 +404,18 @@ curl --location 'https://hng-task2--cazicruz.repl.co/api'
   ##  Response Consistency:
   The API maintains a consistent response structure, often returning data within a person object for successful operations and providing JSON error messages for failures.
 # <a href="https://lucid.app/lucidchart/4b42b49f-41b4-457d-be6a-d409b782d5ea/edit?viewport_loc=-273%2C-335%2C1480%2C636%2C0_0&invitationId=inv_ed171752-f54a-468c-a136-a4e1e7c8abc4">UML diagram</a>
+
+## Set Up
+
+    Clone this repository : gitclone 'repo's url'
+    Install node dependenices : npm i
+    Setup a mongodb instance at Mongodb atlas or using a local instance of Mongodb
+    create a .env file with the following fields:
+        MONGO_URI = 'Mongodb connection Url'
+        PORT = 'desired port number'
+
+## Run
+
+    Open terminal and run "npm rub start" or node index.js
+    node index.js would start up the server but you would need to restart the server when you make changes
+
