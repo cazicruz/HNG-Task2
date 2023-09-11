@@ -370,7 +370,7 @@ curl --location 'https://hng-task2--cazicruz.repl.co/api'
       }
   ]
   ```
-```API Limitations:
+**API Limitations:
 
     Limited Input Validation: The API assumes that clients will provide valid and well-formatted input for parameters like name and newName. There is minimal input validation, and invalid input may not be handled effectively.
 
