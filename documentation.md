@@ -370,4 +370,26 @@ curl --location 'https://hng-task2--cazicruz.repl.co/api'
       }
   ]
   ```
-```
+```API Limitations:
+
+    Limited Input Validation: The API assumes that clients will provide valid and well-formatted input for parameters like name and newName. There is minimal input validation, and invalid input may not be handled effectively.
+
+    Overloaded Endpoint: The API uses the same endpoint for multiple operations (GET, POST, PUT, DELETE), making it harder to follow RESTful principles. This approach may lead to confusion and a lack of clear separation of concerns.
+
+    Inadequate Error Handling: Error handling is limited. While the API returns appropriate HTTP status codes, the error messages and descriptions provided to clients could be more informative and helpful in diagnosing issues.
+
+    Lack of Authentication and Authorization: The API does not incorporate authentication or authorization mechanisms. This means that there are no security measures in place to restrict access to certain endpoints, posing a potential security risk.
+
+API Assumptions:
+
+    Input Sources: The API assumes that clients can provide name and newName parameters via request body, query parameters, or path parameters. It attempts to retrieve these parameters in a specific order (body, query, path) and assumes they are of type string.
+
+    Data Existence: When fetching or updating a record, the API assumes that the name provided corresponds to an existing record in the database. It does not handle cases where the record does not exist.
+
+    Database Interaction: The API assumes interaction with a database, likely a MongoDB database. It uses Mongoose methods for database operations, and users are expected to have a compatible database structure in place.
+
+    Successful Responses: For successful operations, the API assumes a 200 OK status code and returns data in a JSON format. It also assumes that responses will include specific fields like name, _id, __v, and potentially others.
+
+    Logging: The API includes logging statements using console.log for debugging purposes. Users should be aware that these logs may appear in server logs during development and may need to be removed or replaced with proper logging mechanisms in production.
+
+    Response Consistency: The API maintains a consistent response structure, often returning data within a person object for successful operations and providing JSON error messages for failures.
