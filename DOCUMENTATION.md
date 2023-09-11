@@ -403,3 +403,4 @@ curl --location 'https://hng-task2--cazicruz.repl.co/api'
 
   ##  Response Consistency:
   The API maintains a consistent response structure, often returning data within a person object for successful operations and providing JSON error messages for failures.
+# <a href="https://lucid.app/lucidchart/4b42b49f-41b4-457d-be6a-d409b782d5ea/edit?viewport_loc=-273%2C-335%2C1480%2C636%2C0_0&invitationId=inv_ed171752-f54a-468c-a136-a4e1e7c8abc4">UML diagram</a>
